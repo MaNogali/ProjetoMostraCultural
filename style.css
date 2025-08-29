@@ -22,14 +22,10 @@ html{
   scroll-behavior: smooth;
 }
 
-/*::-webkit-scrollbar{
-  display: none;
-}*/
-
 body {
   font-family: "Times New Roman", sans-serif;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   background:var(--bege) ;
   overflow-x: hidden;
 }
@@ -51,7 +47,7 @@ main {
 }
 
 .heading {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,8 +60,8 @@ main {
 }
 
 .heading img{
-  width: 50%;
-  height: 40%;
+  width: 40%;
+  height: 100%;
 }
 
 .heading::before {
@@ -84,41 +80,13 @@ main {
   margin-bottom: -8px;
 }
 
-.heading h1 {
-  font-size: 100px;
-}
-
-.heading h1 b{
-    display: inline-block;
-}
-
-.heading span {
-  background: var(--bege) ;
-  display: block;
-  position: absolute;
-  top: -20px;
-  font-size: 30px;
-  padding: 0 10px;
-  font-family: "Old London";
-  color: var(--vermelho);
-}
-
-.heading p {
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  word-spacing: 5px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-
 nav {
   display: flex;
-  width: 100%;
+  width: 95%;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 17px;
   gap: 20px;
 }
 
@@ -128,10 +96,10 @@ nav a {
   font-family: "Dela Gothic One";
 }
 
-nav .logo {
+nav .nome {
   margin-right: auto;
   font-family: "Dela Gothic One";
-  font-size: 30px;
+  font-size: 27px;
   color: var(--vermelho);
 }
 .referencia:hover{
@@ -140,12 +108,10 @@ nav .logo {
 }
 
 .section-1 {
-  width: 100%;
+  width: 95%;
   min-height: 100vh;
   border: 4px solid var(--marrom2);
   padding: 20px 0;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 0;
@@ -153,28 +119,28 @@ nav .logo {
 }
 
 .section-1 h2 {
-  font-size: 90px;
+  font-size: 80px;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .section-1 .content {
-  display: flex;
   height: 100%;
   width: 100%;
   padding: 20px;
- 
 }
 
 .section-1 .content .text {
-  width: 95%;
+  width: 90%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   text-align: justify;
   gap: 30px;
   padding-bottom: 50px;
-  padding-left: 50px;
-  font-size: 21px ;
+  padding-left: 30px;
+  font-size: 19px ;
+  line-height: 1.4;
 }
 .section-1 p{
   margin-bottom: 15px;
@@ -186,14 +152,13 @@ nav .logo {
 
 .intolerancia {
   min-height: 100%;
-  margin-left: 25px;
+  margin-left: 2px;
+  border-radius: 10px;
 }
 
 .intolerancia img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
- 
 }
 
 .section-1 .text p span {
@@ -208,7 +173,7 @@ nav .logo {
 }
 
 .section-2 {
-  width: 100%;
+  width: 95%;
   margin: 10px;
   padding: 20px;
 }
@@ -221,7 +186,7 @@ nav .logo {
 .section-2 .content .text {
   width: 70%;
   line-height: 1.4;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .section-2 .content .text p {
@@ -231,7 +196,7 @@ nav .logo {
 .section-2 .content .text h2 {
   width: 100%;
   font-size: 60px;
-  color: var(--marrom2);
+  color: var(--preto);
   margin-bottom: 30px;
   text-align: center;
   position: relative;
@@ -280,9 +245,101 @@ nav .logo {
   height: 100%;
   border-radius: 10px;
 }
+#atores{
+  width: 92%;
+  font-size: 60px;
+  color: var(--preto);
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  border-top: 5px solid var(--marrom2);
+  border-bottom: 5px solid var(--marrom2);
+}
+#atores::before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--marrom2);
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+#atores::after {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--marrom2);
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 92%;
+  overflow: hidden;
+  border: 5px solid var(--preto);
+  background-color: var(--bege);
+
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  font-size: 18px;
+  align-items: center;
+}
+.carousel-item h2{
+  font-size: 35px;
+}
+
+.carousel-item img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 15px;
+  border: 3px solid var(--preto);
+  margin-right: 30px;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--vermelho);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: var(--marrom2);
+}
 
 .section-3 {
-  width: 100%;
+  width: 95%;
   margin: 10px;
   padding: 20px;
 }
@@ -305,7 +362,7 @@ nav .logo {
 .section-3 h2 {
   width: 100%;
   font-size: 60px;
-  color: var(--marrom2);
+  color: var(--preto);
   margin-bottom: 30px;
   text-align: center;
   position: relative;
@@ -344,12 +401,15 @@ nav .logo {
   padding: 5px;
 }
 
+.filmes{
+  width: 95%;
+}
 .title{
   text-align: center;
   color: var(--marrom2);
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 7vh;
+  margin-bottom: 4vh;
   font-family: "Dela Gothic One";
 }
 
@@ -384,7 +444,7 @@ nav .logo {
   bottom: 0;
   border-bottom: none;
   width: 100%;
-  height: 20%;
+  height: 25%;
   overflow-y: hidden;
   padding: 10px 15px;
   background: var(--marrom);
@@ -396,7 +456,6 @@ nav .logo {
   transition: height .5s ease;
 }
 .card-content .info{
-  max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.5 ease, opacity 0.5 ease;
@@ -407,7 +466,7 @@ nav .logo {
   transform: translateY(0%);
   background-color: var(--marrom);
   color: var(--vermelho);
-  height: 45%;
+  height: 49%;
 }
 .card:hover .card-content .info{
   max-height: 100%;
@@ -420,7 +479,7 @@ nav .logo {
 }
 
 .section-4 {
-  width: 100%;
+  width: 95%;
   margin: 10px;
   padding: 20px;
 }
@@ -428,7 +487,7 @@ nav .logo {
 .section-4 h2 {
   width: 100%;
   font-size: 60px;
-  color: var(--marrom2);
+  color: var(--preto);
   margin-bottom: 30px;
   text-align: center;
   position: relative;
@@ -494,6 +553,10 @@ nav .logo {
   flex-direction:column;
   color: var(--vermelho);
 }
+.poderoso h4{
+  text-align: center;
+  margin-bottom: 2vh;
+}
 .cards{
   width: 100%;
   height: 100%;
@@ -515,15 +578,15 @@ nav .logo {
   gap: 10px;
 }
 .cards-poderosos a{
-  text-decoration:none;
+  text-decoration: none;
 }
-.cards-poderosos a h2{
+.cards-poderosos h2{
   font-size: 30px;
   color: var(--vermelho);
 }
-.cards-poderosos a h2:hover{
+.cards-poderosos a:hover{
   text-decoration: underline;
-  color: var(--marrom2);
+  color: var(--vermelho);
 }
 .cards-poderosos img{
   width: 100%;
@@ -562,4 +625,152 @@ nav .logo {
 
 .footer p:last-child{
   color: var(--vermelho);
+}
+
+@media(max-width: 500px){
+
+  main {
+    padding: 10px;
+  }
+
+  .heading img {
+    width: 80%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  nav .nome {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .section-1 h2,
+  .section-2 .content .text h2,
+  #atores,
+  .section-3 h2,
+  .section-4 h2 {
+    font-size: 35px;
+  }
+
+  .section-1 .content,
+  .section-2 .content,
+  .section-3 .content,
+  .section-4 .content {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .section-1 .content .text,
+  .section-2 .content .text,
+  .carousel-item,
+  .section-3 .content .text,
+  .section-4 .content .text {
+    width: 100%;
+    font-size: 17px;
+    padding-left: 0;
+  }
+
+  .section-2 .content .image,
+  .image,
+  .text .left,
+  .text .right {
+    width: 90%;
+  }
+
+  .section-1 .text p span,
+  .section-2 .text p span,
+  .section-3 .text p span,
+  .section-4 .text p span {
+    font-size: 40px;
+  }
+  .section-1 .content .text{
+    flex-direction: column;
+  }
+  .intolerancia {
+    margin-top: 20px; 
+    width: 70%;
+    margin-left: 40px;
+  }
+    .intolerancia img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .carousel-item{
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-item p{
+    width: 70%;
+    
+  }
+ 
+  .filmes .item-filme {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .card {
+    width: 70%;
+    flex: 1 1 100%;
+  }
+
+  .card-content {
+    height: auto;
+    padding: 10px;
+  }
+
+  .card:hover .card-content {
+    height: auto;
+  }
+
+  .card:hover .card-content .info {
+    opacity: 1;
+  }
+
+  .titulo-card {
+    font-size: 1rem;
+  }
+
+  .poderoso {
+    width: 70%;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cards-poderosos {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .cards-poderosos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer p:first-child {
+    font-size: 16px;
+  }
 }
