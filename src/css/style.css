@@ -53,7 +53,7 @@ main {
 }
 
 .heading {
-  width: 95%;
+  width: 92%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +88,7 @@ main {
 
 nav {
   display: flex;
-  width: 95%;
+  width: 92%;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
@@ -114,7 +114,7 @@ nav .nome {
 }
 
 .section-1 {
-  width: 95%;
+  width: 92%;
   min-height: 100vh;
   border: 4px solid var(--marrom2);
   padding: 20px 0;
@@ -143,8 +143,9 @@ nav .nome {
   font-size: 19px ;
   line-height: 1.4;
 }
-.section-1 p{
-  margin-bottom: 15px;
+ p{
+  margin-bottom: 10px;
+  hyphens: auto;
 }
 
 .recuo{
@@ -173,13 +174,15 @@ nav .nome {
   padding: 5px;
 }
 
-.section-2 {
+.section-2,
+.section-3,
+.section-4 {
   width: 95%;
   margin: 10px;
   padding: 20px;
 }
 
-.section-2 .content {
+.content {
   display: flex;
   gap: 20px;
 }
@@ -187,20 +190,23 @@ nav .nome {
 .section-2 .content .text {
   width: 70%;
   line-height: 1.4;
-  font-size: 19px;
+
 }
 
-.section-2 .content .text p {
+.content .text p {
   text-align: justify;
+  line-height: 1.4;
+  font-size: 19px;
+  
 }
 
-.section-2 .content .text h2 {
+ h2 {
   position: relative;
   border-top: 5px solid var(--marrom2);
   border-bottom: 5px solid var(--marrom2);
 }
 
-.section-2 .content .text h2::before {
+ h2::before {
   width: 100%;
   content: "";
   height: 2px;
@@ -210,7 +216,7 @@ nav .nome {
   top: 2px;
 }
 
-.section-2 .content .text h2::after {
+ h2::after {
   width: 100%;
   content: "";
   height: 2px;
@@ -220,7 +226,7 @@ nav .nome {
   bottom: 2px;
 }
 
-.section-2 .content .image {
+.content .image {
   width: 30%;
   filter: grayscale(100%);
 }
@@ -260,7 +266,7 @@ nav .nome {
   position: relative;
   width: 92%;
   overflow: hidden;
-  border: 5px solid var(--preto);
+  border: 4px solid var(--preto);
   background-color: var(--bege);
 
 }
@@ -274,7 +280,6 @@ nav .nome {
   min-width: 100%;
   box-sizing: border-box;
   padding: 30px;
-
   line-height: 1.6;
   display: flex;
   flex-direction: row;
@@ -282,16 +287,17 @@ nav .nome {
   font-size: 18px;
   align-items: center;
 }
-.carousel-item h2{
+.carousel-item h3{
   font-size: 35px;
 }
 
 .carousel-item img {
-  max-width: 30%;
+  max-width: 22%;
   height: auto;
   margin-bottom: 15px;
   border: 3px solid var(--preto);
   margin-right: 30px;
+  border-radius: 10px;
 }
 .carousel-button {
   position: absolute;
@@ -319,56 +325,14 @@ nav .nome {
   background-color: var(--marrom2);
 }
 
-.section-3 {
-  width: 95%;
-  margin: 10px;
-  padding: 20px;
-}
-
-.section-3 .content {
-  display: flex;
-  gap: 20px;
-}
-
-.section-3 .content .text {
+.section-3 .content p{
   width: 100%;
   line-height: 1.4;
-  font-size: 21px;
-}
-
-.section-3 .content .text p {
-  text-align: justify;
-}
-
-.section-3 h2 {
-  width: 100%;
-  position: relative;
-  border-top: 5px solid var(--marrom2);
-  border-bottom: 5px solid var(--marrom2);
-}
-
-.section-3 h2::before {
-  width: 100%;
-  content: "";
-  height: 2px;
-  background: var(--marrom2);
-  position: absolute;
-  left: 0;
-  top: 2px;
-}
-
-.section-3 h2::after {
-  width: 100%;
-  content: "";
-  height: 2px;
-  background: var(--marrom2);
-  position: absolute;
-  left: 0;
-  bottom: 2px;
+  font-size: 19px;
 }
 
 .filmes{
-  width: 95%;
+  width: 92%;
 }
 .title{
   text-align: center;
@@ -444,53 +408,6 @@ nav .nome {
   font-weight: 500;
 }
 
-.section-4 {
-  width: 95%;
-  margin: 10px;
-  padding: 20px;
-}
-
-.section-4 h2 {
-  width: 100%;
-  position: relative;
-  border-top: 5px solid var(--marrom2);
-  border-bottom: 5px solid var(--marrom2);
-}
-
-.section-4 h2::before {
-  width: 100%;
-  content: "";
-  height: 2px;
-  background: var(--marrom2);
-  position: absolute;
-  left: 0;
-  top: 2px;
-}
-
-.section-4 h2::after {
-  width: 100%;
-  content: "";
-  height: 2px;
-  background: var(--marrom2);
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-}
-
-.section-4 .content {
-  display: flex;
-  gap: 20px;
-}
-
-.section-4 .content .text {
-  width: 100%;
-  line-height: 1.4;
-  font-size: 19px;
-}
-
-.section-4 .content .text p {
-  text-align: justify;
-}
 
 .text .left,
 .text .right {
@@ -531,7 +448,7 @@ nav .nome {
 .cards-poderosos a{
   text-decoration: none;
 }
-.cards-poderosos h2{
+.cards-poderosos h3{
   font-size: 30px;
   color: var(--vermelho);
 }
@@ -548,7 +465,7 @@ nav .nome {
 .footer {
   background-color: var(--bege);
   color: var(--preto);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Dela Gothic One ";
   padding: 30px 20px;
   border-top: 3px solid var(--marrom2);
   text-align: center;
@@ -604,18 +521,12 @@ nav .nome {
     margin: 0;
   }
 
-  .section-1 h2,
-  .section-2 .content .text h2,
-  #atores,
-  .section-3 h2,
-  .section-4 h2 {
+  h1,
+  h2 {
     font-size: 35px;
   }
 
-  .section-1 .content,
-  .section-2 .content,
-  .section-3 .content,
-  .section-4 .content {
+  .content {
     flex-direction: column;
     padding: 10px;
     align-items: center;
