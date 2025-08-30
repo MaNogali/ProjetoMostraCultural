@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+:root{
+  --bege: #fef2da;
+  --preto: #140b0d;
+  --marrom: #783719;
+  --marrom2: #44160c;
+  --vermelho: #9c0f0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Old London";
+  src: url("../fonts/old-london.regular.ttf") format("truetype");
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background:var(--bege) ;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Old London", sans-serif;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  color: var(--preto);
+  margin-bottom: 30px;
+}
+
+main {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.heading {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-top: 5px solid var(--preto);
+  border-bottom: 5px solid var(--preto);
+  position: relative;
+}
+
+.heading img{
+  width: 40%;
+  height: 100%;
+}
+
+.heading::before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--preto);
+  margin-top: -8px;
+}
+
+.heading::after {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--preto);
+  margin-bottom: -8px;
+}
+
+nav {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 17px;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--preto);
+  font-family: "Dela Gothic One";
+}
+
+nav .nome {
+  margin-right: auto;
+  font-family: "Dela Gothic One";
+  font-size: 27px;
+  color: var(--vermelho);
+}
+.referencia:hover{
+  text-decoration: underline;
+  color: var(--vermelho);
+}
