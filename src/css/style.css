@@ -193,11 +193,10 @@ nav .nome {
 
 }
 
-.content .text p {
+ p {
   text-align: justify;
   line-height: 1.4;
   font-size: 19px;
-  
 }
 
  h2 {
@@ -228,7 +227,7 @@ nav .nome {
 
 .content .image {
   width: 30%;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
 }
 
 .image img {
@@ -325,12 +324,6 @@ nav .nome {
   background-color: var(--marrom2);
 }
 
-.section-3 .content p{
-  width: 100%;
-  line-height: 1.4;
-  font-size: 19px;
-}
-
 .filmes{
   width: 92%;
 }
@@ -408,14 +401,13 @@ nav .nome {
   font-weight: 500;
 }
 
-
-.text .left,
-.text .right {
-  width: 50%;
+.section-4 .content{
+  column-count: 2;
+  column-gap: 1.5rem; 
 }
 
 .poderoso{
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction:column;
@@ -468,18 +460,19 @@ nav .nome {
   font-family: "Dela Gothic One ";
   padding: 30px 20px;
   border-top: 3px solid var(--marrom2);
-  text-align: center;
   letter-spacing: 0.8px;
   line-height: 1.4;
 }
 
 .footer .footer-content {
   margin: 0 auto;
+  
 }
 
 .footer p {
   margin: 8px 0;
   font-size: 17px;
+  text-align: center;
 }
 
 .footer p:first-child {
@@ -495,7 +488,7 @@ nav .nome {
   color: var(--vermelho);
 }
 
-@media(max-width: 500px){
+@media screen and (max-width: 500px){
 
   main {
     padding: 20px;
@@ -517,7 +510,7 @@ nav .nome {
   }
 
   nav .nome {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
   }
 
@@ -540,7 +533,7 @@ nav .nome {
   .section-3 .content .text,
   .section-4 .content .text {
     width: 100%;
-    font-size: 17px;
+    font-size: 16px;
     padding-left: 0;
   }
 

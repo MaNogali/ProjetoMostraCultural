@@ -36,7 +36,7 @@ h3 {
   font-family: "Old London", sans-serif;
   font-size: 65px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   color: var(--preto);
   margin-bottom: 30px;
@@ -126,11 +126,40 @@ p span {
   padding: 5px;
 }
 .section-sinopse,
-.section-diretor {
+.section-diretor,
+.section-bastidores {
   width: 95%;
   margin: 10px;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.title{
+  text-align: center;
+  color: var(--bege);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Dela Gothic One";
+  letter-spacing: 2px;
+}
+
+.section-sinopse .ficha .title{
+  color: var(--marrom2);
+  margin-bottom: 10px;
+  letter-spacing: normal;
+}
+
+.ficha p{
+  font-size: 0.8rem;
+}
+
+hr{
+  width: 3px;
+  height: 340px;
+  background-color: var(--vermelho);
+  border: none;
+  margin: 0 16px;
+  display: inline-block;
 }
 
 .content {
@@ -176,8 +205,9 @@ h2::after {
 }
 
 p{
-    margin-bottom: 10px;
-    hyphens: auto;
+  margin-bottom: 10px;
+  hyphens: auto;
+  text-align: justify;
 }
 
 .section-sinopse .content .image {
@@ -221,7 +251,7 @@ p{
 
 .carousel-container {
   position: relative;
-  width: 92%;
+  width: 80%;
   overflow: hidden;
   border: 4px solid var(--preto);
   background-color: var(--bege);
@@ -238,11 +268,11 @@ p{
   min-width: 100%;
   box-sizing: border-box;
   padding: 50px;
-  line-height: 1.6;
+  line-height: 1.4;
   display: flex;
   flex-direction: row;
   text-align: justify;
-  font-size: 18px;
+  font-size: 17px;
   align-items: center;
   justify-items: center;
 }
@@ -282,22 +312,50 @@ p{
   background-color: var(--marrom2);
 }
 
+.section-bastidores .content{
+  justify-content: center;
+  gap: 60px;
+}
+
+.section-bastidores .text{
+  width: 100%;
+}
+.section-bastidores .text p{
+  font-size: 17px;
+}
+
+.section-bastidores .div-bastidores{
+  width: 30%;
+  border: 3px solid var(--marrom2);
+  padding: 15px;
+}
+
+.section-bastidores .img{
+  width: 100%;
+}
+
+.section-bastidores .img img{
+  width: 100%;
+  height: 20em;
+  border-radius: 30px;
+  padding: 20px;
+  object-fit: cover;
+}
+
 .section-diretor .text{
   column-count: 2;
-  column-gap: 1.5rem; /* espaço entre as colunas */
-  hyphens: auto;
-  text-align: justify;
+  column-gap: 1.5rem; 
 }
 
 .section-diretor .img{
-    width: 25%;
+  width: 25%;
 }
 
 .section-diretor img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .section-locais {
   width: 92%;
@@ -308,8 +366,8 @@ p{
   align-items: center;
   padding-bottom: 0;
   position: relative;
+  margin-bottom: 40px;
 }
-
 
 .section-locais .content {
   height: 100%;
@@ -322,7 +380,6 @@ p{
   height: 100%;
   display: flex;
   flex-direction: row;
-  text-align: justify;
   gap: 30px;
   padding-bottom: 50px;
   padding-left: 30px;
@@ -336,12 +393,11 @@ p{
   
 }
 .cartaz img{
-    width: 100%;
-    height: 80%;
+  width: 100%;
+  height: 80%;
 }
 .filmes{
   width: 100%;
-  height: ;
 }
 
 .item-filme{
@@ -367,15 +423,14 @@ p{
   object-fit: cover;
   width: 100%;
   height: 90%;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
 }
-.title{
-  text-align: center;
-  color: var(--bege);
-  font-size: 1rem;
-  font-weight: 500;
 
-  font-family: "Dela Gothic One";
+
+.section-locais h4{
+  color: var(--vermelho);
+  text-align: center;
+  margin-top: -20px;
 }
 .card-content{
   position: absolute;
@@ -431,6 +486,273 @@ p{
   0%   { opacity: 0; }
   5%   { opacity: 1; }
   30%  { opacity: 1; }
-  35%  { opacity: 1; }
+  35%  { opacity: 0.1; }
   100% { opacity: 0; }
+}
+.poderoso{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  color: var(--vermelho);
+}
+.poderoso h4{
+  text-align: center;
+  margin-bottom: 2vh;
+  color: var(--marrom2);
+  font-size: 1.5rem;
+  font-family: "Dela Gothic One";
+  
+}
+.poderoso h5{
+  text-align: center;
+  font-size: 1rem;
+}
+.cards{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards-poderosos{
+  width: 30%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  gap: 10px;
+}
+.cards-poderosos a{
+  text-decoration: none;
+}
+.cards-poderosos h3{
+  font-size: 30px;
+  color: var(--vermelho);
+}
+.cards-poderosos a:hover{
+  text-decoration: underline;
+  color: var(--vermelho);
+}
+.cards-poderosos img{
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: var(--bege);
+  color: var(--preto);
+  font-family: "Dela Gothic One ";
+  margin-top: 20px;
+  padding: 30px 20px;
+  border-top: 3px solid var(--marrom2);
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+  width: 110%;
+}
+
+.footer .footer-content {
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed var(--vermelho);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.footer p:last-child{
+  color: var(--vermelho);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0;
+  }
+
+  h1, h2, h3 {
+    font-size: 35px;
+
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  nav .nome {
+    font-size: 20px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .heading img {
+    width: 75%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .content .text {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .section-sinopse .content .image,
+  .section-diretor .img,
+  .section-bastidores .img {
+    width: 70%;
+  }
+
+  .section-sinopse .ficha p,
+  .section-bastidores .text p,
+  .section-diretor .text p {
+    font-size: 16px;
+  }
+
+  .section-bastidores,
+  .section-diretor,
+  .section-sinopse{
+    width: 100%;
+  }
+
+  p span {
+    font-size: 40px;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .section-diretor .text {
+    column-count: 1;
+  }
+
+  .carousel-container{
+    width: 90%;
+  }
+
+   .carousel-item{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-item {
+    flex-direction: column;
+    padding: 20px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .carousel-item h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+   .carousel-item img {
+    max-width: 60%;
+    margin: 0 auto 20px auto;
+  }
+  .carousel-button {
+    padding: 8px;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+
+  .section-diretor{
+    margin-bottom: 0;
+  }
+
+   .section-diretor .img img{
+    height: 300px;
+  }
+
+  .section-bastidores .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-bastidores .div-bastidores {
+    width: 100%;
+  }
+
+  .section-bastidores .img{
+    width: 100%;
+  }
+
+  .section-locais .item-filme {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section-locais{
+    width: 95%;
+  }
+
+  .card {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .card-content .info {
+    font-size: 1em;
+  }
+
+  .poderoso h4 {
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards-poderosos {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .cards-poderosos h3 {
+    font-size: 22px;
+  }
+
+ .footer {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+
+  .footer p:first-child {
+    font-size: 13px;
+  }
 }
