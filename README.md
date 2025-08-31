@@ -5,3 +5,4 @@ subgêneros, com exemplos. Além disso, ele trata de uma saga famosa dentro do t
 ## Linguagens
 - HTML
 - CSS
+- JavaScript
