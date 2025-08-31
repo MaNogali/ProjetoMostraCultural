@@ -580,8 +580,9 @@ p{
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    padding: 0;
+  main{
+    width: 95%;
+    margin: 0 auto;
   }
 
   h1, h2, h3 {
