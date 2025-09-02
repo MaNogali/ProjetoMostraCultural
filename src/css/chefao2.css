@@ -1,0 +1,734 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+:root{
+  --bege: #fef2da;
+  --preto: #140b0d;
+  --marrom: #783719;
+  --marrom2: #44160c;
+  --vermelho: #9c0f0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Old London";
+  src: url("../fonts/old-london.regular.ttf") format("truetype");
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background:var(--bege) ;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Old London", sans-serif;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  color: var(--preto);
+  margin-bottom: 30px;
+}
+
+main {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.heading {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-top: 5px solid var(--preto);
+  border-bottom: 5px solid var(--preto);
+  position: relative;
+}
+
+.heading img{
+  width: 40%;
+  height: 100%;
+}
+
+.heading::before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--preto);
+  margin-top: -8px;
+}
+
+.heading::after {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--preto);
+  margin-bottom: -8px;
+}
+
+nav {
+  display: flex;
+  width: 92%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 17px;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--preto);
+  font-family: "Dela Gothic One";
+}
+
+nav .nome {
+  margin-right: auto;
+  font-family: "Dela Gothic One";
+  font-size: 27px;
+  color: var(--vermelho);
+}
+.nome:hover{
+    color: var(--marrom2);
+}
+.referencia:hover{
+  text-decoration: underline;
+  color: var(--vermelho);
+}
+p span {
+  font-size: 60px;
+  float: left;
+  margin-right: 6px;
+  font-weight: bold;
+  line-height: 1;
+  background: var(--vermelho);
+  color: var(--bege);
+  padding: 5px;
+}
+.section-sinopse,
+.section-diretor {
+  width: 95%;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title{
+  text-align: center;
+  color: var(--bege);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Dela Gothic One";
+  letter-spacing: 2px;
+}
+
+.section-sinopse .ficha .title{
+  color: var(--marrom2);
+  margin-bottom: 10px;
+  letter-spacing: normal;
+}
+
+.ficha p{
+  font-size: 0.8rem;
+}
+
+hr{
+  width: 3px;
+  height: 340px;
+  background-color: var(--vermelho);
+  border: none;
+  margin: 0 16px;
+  display: inline-block;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+ .content .text {
+  width: 80%;
+  line-height: 1.4;
+}
+
+.content .text p {
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 19px;
+}
+
+h2 {
+  position: relative;
+  border-top: 5px solid var(--marrom2);
+  border-bottom: 5px solid var(--marrom2);
+}
+
+h2::before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--marrom2);
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+h2::after {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--marrom2);
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+
+p{
+  margin-bottom: 10px;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.section-sinopse .content .image {
+  width: 25%;
+}
+
+.section-sinopse .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.recuo{
+  text-indent: 5%;
+}
+#atores{
+  width: 92%;
+  position: relative;
+  border-top: 5px solid var(--marrom2);
+  border-bottom: 5px solid var(--marrom2);
+}
+#atores::before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--marrom2);
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+#atores::after {
+  width: 100%;
+  content: "";
+  height: 2px;
+  background: var(--marrom2);
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  border: 4px solid var(--preto);
+  background-color: var(--bege);
+  margin-bottom: 20px;
+
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  font-size: 17px;
+  align-items: center;
+  justify-items: center;
+}
+.carousel-item h3{
+  font-size: 35px;
+}
+.carousel-item img {
+  max-width: 20%;
+  height: auto;
+  border: 3px solid var(--preto);
+  margin-right: 40px;
+  border-radius: 10px;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--vermelho);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: var(--marrom2);
+}
+
+.section-diretor .text{
+  column-count: 2;
+  column-gap: 1.5rem; 
+}
+
+.section-diretor .img{
+  width: 25%;
+}
+
+.section-diretor img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.section-produtor{
+  width: 95%;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-produtor .text{
+    width: 90%;
+    margin-top: -20px;
+}
+
+.section-produtor .cards{
+    height: 550px;
+    margin-top: -30px;
+}
+
+.section-produtor .cards .cards-poderosos img{
+    object-fit: cover;
+}
+
+.section-locais {
+  width: 92%;
+  min-height: 500px;
+  border: 4px solid var(--marrom2);
+  padding: 20px;
+  padding-bottom: 30px;
+  justify-content: center;
+
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.section-locais .card-content {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 30px;
+  position: absolute;
+  padding: 1em;
+  bottom: 0;
+  border-bottom: none;
+  width: 100%;
+  overflow-y: hidden;
+  padding: 10px 15px;
+  background: var(--marrom);
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  transform: translateY(100%);
+  transition: height .5s ease;
+}
+.card{
+  position: relative;
+  width: 400px; 
+  height: 280px;
+  aspect-ratio: 13 / 20;
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-top: 30px;
+  align-items: center;
+}
+.card img{
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+  filter: grayscale(90%);
+}
+
+.section-locais .card-content span {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.item-filme{
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.section-locais h4{
+  color: var(--vermelho);
+  text-align: center;
+  margin-top: -20px;
+}
+.card-content .title{
+    margin-bottom: 4px;
+}
+.card-content .info{
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5 ease, opacity 0.5 ease;
+  font-size: 0.9em;
+  line-height: 1.4rem;
+}
+
+.card:hover .card-content {
+  transform: translateY(0%);
+  background-color: var(--marrom);
+  color: var(--bege);
+  height: 59%;
+}
+.card:hover .card-content .info{
+  max-height: 100%;
+  opacity: 1;
+}
+.slider {
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 12s infinite;
+}
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 4s; }
+.slider img:nth-child(3) { animation-delay: 8s; }
+@keyframes fade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  30%  { opacity: 1; }
+  35%  { opacity: 0.1; }
+  100% { opacity: 0; }
+}
+.poderoso{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  color: var(--vermelho);
+}
+.poderoso h4{
+  text-align: center;
+  margin-bottom: 2vh;
+  color: var(--marrom2);
+  font-size: 1.5rem;
+  font-family: "Dela Gothic One";
+  
+}
+.poderoso h5{
+  text-align: center;
+  font-size: 1rem;
+}
+.cards{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards-poderosos{
+  width: 30%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  gap: 10px;
+}
+.cards-poderosos a{
+  text-decoration: none;
+}
+.cards-poderosos h3{
+  font-size: 30px;
+  color: var(--vermelho);
+}
+.cards-poderosos a:hover{
+  text-decoration: underline;
+  color: var(--vermelho);
+}
+.cards-poderosos img{
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: var(--bege);
+  color: var(--preto);
+  font-family: "Dela Gothic One ";
+  margin-top: 20px;
+  padding: 30px 20px;
+  border-top: 3px solid var(--marrom2);
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+  width: 110%;
+}
+
+.footer .footer-content {
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed var(--vermelho);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.footer p:last-child{
+  color: var(--vermelho);
+}
+
+@media screen and (max-width: 500px) {
+  main{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  h1, h2, h3 {
+    font-size: 35px;
+
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  nav .nome {
+    font-size: 20px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .heading img {
+    width: 75%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .content .text {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .section-sinopse .content .image,
+  .section-diretor .img,
+  .section-bastidores .img {
+    width: 70%;
+  }
+
+  .section-sinopse .ficha p,
+  .section-bastidores .text p,
+  .section-diretor .text p {
+    font-size: 16px;
+  }
+
+  .section-bastidores,
+  .section-diretor,
+  .section-sinopse{
+    width: 100%;
+  }
+
+  p span {
+    font-size: 40px;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .section-diretor .text {
+    column-count: 1;
+  }
+
+  .carousel-container{
+    width: 90%;
+  }
+
+   .carousel-item{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-item {
+    flex-direction: column;
+    padding: 20px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .carousel-item h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+   .carousel-item img {
+    max-width: 60%;
+    margin: 0 auto 20px auto;
+  }
+  .carousel-button {
+    padding: 8px;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+
+  .card:hover .card-content{
+    height: 100%;
+  }
+
+  .section-diretor{
+    margin-bottom: 0;
+  }
+
+   .section-diretor .img img{
+    height: 300px;
+  }
+  .section-locais .item-filme {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section-locais{
+    width: 95%;
+  }
+
+  .card {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .card-content .info {
+    font-size: 1em;
+  }
+
+  .poderoso h4 {
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards-poderosos {
+    width: 70%;
+    padding: 10px;
+  }
+  .section-produtor .cards{
+    margin-bottom: 10px;
+  }
+  .section-produtor img{
+    width: 200px;
+    height: 150px;
+
+  }
+
+  .cards-poderosos h3 {
+    font-size: 22px;
+  }
+
+ .footer {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+
+  .footer p:first-child {
+    font-size: 13px;
+  }
+}
