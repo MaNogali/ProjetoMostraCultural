@@ -52,8 +52,11 @@ main {
   padding: 20px;
 }
 
-.heading {
+.heading{
   width: 92%;
+}
+
+.heading a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,11 +323,12 @@ p{
 
 .section-diretor .img{
   width: 25%;
+  height: 400px;
 }
 
 .section-diretor img{
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -667,8 +671,14 @@ p{
     margin-bottom: 0;
   }
 
-   .section-diretor .img img{
+  .section-diretor .img{
+    width: 100%;
     height: 300px;
+  }
+
+   .section-diretor .img img{
+    height: 100%;
+    width: 100%;
   }
   .section-locais .item-filme {
     flex-direction: column;
@@ -680,7 +690,7 @@ p{
   }
 
   .card {
-    width: 70%;
+    width: 90%;
     margin-bottom: 20px;
   }
 
