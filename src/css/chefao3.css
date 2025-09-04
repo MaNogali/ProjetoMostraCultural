@@ -585,7 +585,8 @@ p{
 
   h1, h2, h3 {
     font-size: 35px;
-
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 
   nav {
@@ -620,8 +621,7 @@ p{
   }
 
   .section-sinopse .content .image,
-  .section-diretor .img,
-  .section-bastidores .img {
+  .section-diretor .img {
     width: 70%;
   }
 
@@ -631,7 +631,6 @@ p{
     font-size: 16px;
   }
 
-  .section-bastidores,
   .section-diretor,
   .section-curiosidades,
   .section-sinopse{
@@ -642,6 +641,9 @@ p{
     font-size: 40px;
   }
 
+  p{
+    font-size: 15px;
+  }
   hr{
     display: none;
   }
