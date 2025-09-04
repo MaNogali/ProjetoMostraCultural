@@ -517,7 +517,7 @@ nav .nome {
   h1,
   h2 {
     font-size: 35px;
-    margin: 10px;
+    padding: 10px;
     height:  55px;
   }
 
@@ -530,18 +530,16 @@ nav .nome {
   }
 
   p{
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .section-2 .content .image,
-  .image,
-  .text .left,
-  .text .right {
+  .image {
     width: 90%;
   }
 
   p span {
-    font-size: 40px;
+    font-size: 335px;
   }
   .section-1 .content .text{
     flex-direction: column;
@@ -633,7 +631,7 @@ nav .nome {
   }
 
    .cards-poderosos h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
 
