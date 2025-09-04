@@ -153,7 +153,7 @@ nav .nome {
 }
 
 .intolerancia {
-  min-height: 100%;
+  min-height: 90%;
   margin-left: 2px;
   border-radius: 10px;
 }
@@ -190,13 +190,12 @@ nav .nome {
 .section-2 .content .text {
   width: 70%;
   line-height: 1.4;
-
 }
 
  p {
   text-align: justify;
   line-height: 1.4;
-  font-size: 19px;
+  font-size: 21px;
 }
 
  h2 {

@@ -333,84 +333,66 @@ p{
   border-radius: 10px;
 }
 
-.section-produtor{
-  width: 95%;
-  margin: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
+#lançamento .text{
+  width: 100%;
 }
 
-.section-produtor .text{
-    width: 90%;
-    margin-top: -20px;
+.section-curiosidades{
+  margin-bottom: 60px;
+  width: 92%;
 }
 
-.section-produtor .cards{
-    height: 550px;
-    margin-top: -30px;
+.section-curiosidades .content{
+  justify-content: center;
+  gap: 60px;
 }
 
-.section-produtor .cards .cards-poderosos img{
-    object-fit: cover;
+.section-curiosidades .text{
+  width: 100%;
+}
+
+.section-curiosidades .text p{
+  font-size: 17px;
+}
+
+.section-curiosidades .title{
+  color: var(--vermelho);
+}
+
+.section-curiosidades .div-curiosidades{
+  width: 50%;
+  border: 3px solid var(--marrom2);
+  padding: 15px;
 }
 
 .section-locais {
   width: 92%;
   min-height: 500px;
   border: 4px solid var(--marrom2);
-  padding: 20px;
-  padding-bottom: 30px;
+  padding: 20px 0;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
   position: relative;
   margin-bottom: 40px;
-  margin-top: 30px;
 }
 
-.section-locais .card-content {
+.section-locais .content {
   height: 100%;
   width: 100%;
-  padding-bottom: 30px;
-  position: absolute;
-  padding: 1em;
-  bottom: 0;
-  border-bottom: none;
-  width: 100%;
-  overflow-y: hidden;
-  padding: 10px 15px;
-  background: var(--marrom);
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 1rem;
-  transform: translateY(100%);
-  transition: height .5s ease;
-}
-.card{
-  position: relative;
-  width: 400px; 
-  height: 280px;
-  aspect-ratio: 13 / 20;
-  overflow: hidden;
-  cursor: zoom-in;
-  transition: 0.5s;
-  border-radius: 10px;
-  margin-top: 30px;
-  align-items: center;
-}
-.card img{
-  background-repeat: no-repeat;
-  object-fit: cover;
-  width: 100%;
-  height: 90%;
-  filter: grayscale(90%);
+  padding: 20px;
 }
 
-.section-locais .card-content span {
+.section-locais .content .text {
   width: 90%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  font-size: 19px ;
   line-height: 1.4;
-  text-align: justify;
 }
 
 .item-filme{
@@ -420,14 +402,46 @@ p{
   gap: 30px;
   flex-wrap: wrap;
 }
+.card{
+  position: relative;
+  width: 300px; 
+  height: 230px;
+  aspect-ratio: 13 / 20;
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.card img{
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+  filter: grayscale(90%);
+}
 
 .section-locais h4{
   color: var(--vermelho);
   text-align: center;
   margin-top: -20px;
 }
-.card-content .title{
-    margin-bottom: 4px;
+.card-content{
+  position: absolute;
+  padding: 1em;
+  bottom: 0;
+  border-bottom: none;
+  width: 100%;
+  overflow-y: hidden;
+  padding: 10px 15px;
+  background: var(--marrom);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  transform: translateY(100%);
+  transition: height .5s ease;
 }
 .card-content .info{
   overflow: hidden;
@@ -435,13 +449,16 @@ p{
   transition: max-height 0.5 ease, opacity 0.5 ease;
   font-size: 0.9em;
   line-height: 1.4rem;
+  hyphens: auto;
+  text-align: justify;
+  margin-top: -5px;
 }
 
 .card:hover .card-content {
   transform: translateY(0%);
   background-color: var(--marrom);
   color: var(--bege);
-  height: 59%;
+  height: 72%;
 }
 .card:hover .card-content .info{
   max-height: 100%;
@@ -616,6 +633,7 @@ p{
 
   .section-bastidores,
   .section-diretor,
+  .section-curiosidades,
   .section-sinopse{
     width: 100%;
   }
@@ -664,7 +682,7 @@ p{
   }
 
   .card:hover .card-content{
-    height: 100%;
+    height: 70%;
   }
 
   .section-diretor{
@@ -680,6 +698,15 @@ p{
     height: 100%;
     width: 100%;
   }
+
+  .section-curiosidades{
+    margin-bottom: 20px;
+  }
+  
+  .section-curiosidades .div-curiosidades{
+    width: 100%;
+  }
+
   .section-locais .item-filme {
     flex-direction: column;
     gap: 20px;
