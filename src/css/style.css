@@ -536,6 +536,11 @@ nav .nome {
     width: 100%;
   }
 
+  .section-1 .content .text,
+  .section-2 .content .text{
+    width: 100%;
+  }
+
   .section-2 .content .image,
   .image {
     width: 90%;
@@ -550,7 +555,7 @@ nav .nome {
   .intolerancia {
     margin-top: 20px; 
     width: 70%;
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .intolerancia img {
     width: 100%;
