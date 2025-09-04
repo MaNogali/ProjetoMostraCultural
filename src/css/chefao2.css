@@ -724,8 +724,12 @@ p{
   }
   .section-produtor img{
     width: 150px;
-    height: 100px;
+    height: 150px;
 
+  }
+
+  #dois-personagens h2{
+    height: 75px;
   }
   .cards-poderosos h3 {
     font-size: 20px;

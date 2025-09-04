@@ -532,6 +532,10 @@ nav .nome {
     font-size: 16px;
   }
 
+  .section-2{
+    width: 100%;
+  }
+
   .section-2 .content .image,
   .image {
     width: 90%;
