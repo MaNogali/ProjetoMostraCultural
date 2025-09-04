@@ -187,6 +187,7 @@ h2 {
   position: relative;
   border-top: 5px solid var(--marrom2);
   border-bottom: 5px solid var(--marrom2);
+  margin: 10px;
 }
 
 h2::before {

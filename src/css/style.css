@@ -201,7 +201,8 @@ nav .nome {
  h2 {
   position: relative;
   border-top: 5px solid var(--marrom2);
-  border-bottom: 5px solid var(--marrom2);
+  border-bottom: 5px solid var(--marrom2); 
+  margin: 10px;
 }
 
  h2::before {
@@ -632,7 +633,7 @@ nav .nome {
   }
 
    .cards-poderosos h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
 
