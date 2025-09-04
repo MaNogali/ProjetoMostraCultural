@@ -703,7 +703,7 @@ p{
   }
 
   .card:hover .card-content {
-    height: 70%;
+    height: 80%;
   }
 
   .poderoso h4 {
@@ -729,7 +729,7 @@ p{
   }
 
   #dois-personagens h2{
-    height: 75px;
+    height: 95px;
   }
   .cards-poderosos h3 {
     font-size: 20px;
