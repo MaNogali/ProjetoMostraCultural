@@ -604,8 +604,10 @@ p{
     width: 75%;
   }
 
-  h2, h3{
-    padding: 8px;
+  h1, h2, h3 {
+    font-size: 35px;
+    margin: 10px;
+
   }
 
   .content {
@@ -628,9 +630,7 @@ p{
     width: 70%;
   }
 
-  .section-sinopse .ficha p,
-  .section-bastidores .text p,
-  .section-diretor .text p {
+  p{
     font-size: 17px;
   }
 
@@ -737,7 +737,7 @@ p{
   }
 
   .poderoso h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .cards {
@@ -749,17 +749,9 @@ p{
     width: 70%;
     padding: 10px;
   }
-  .section-produtor .cards{
-    margin-bottom: 10px;
-  }
-  .section-produtor img{
-    width: 200px;
-    height: 150px;
-
-  }
 
   .cards-poderosos h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
  .footer {

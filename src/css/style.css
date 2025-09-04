@@ -490,7 +490,7 @@ nav .nome {
 @media screen and (max-width: 500px){
 
   main {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -517,6 +517,7 @@ nav .nome {
   h1,
   h2 {
     font-size: 35px;
+    margin: 10px;
   }
 
   .content {
@@ -527,14 +528,8 @@ nav .nome {
     justify-content: center;
   }
 
-  .section-1 .content .text,
-  .section-2 .content .text,
-  .carousel-item,
-  .section-3 .content .text,
-  .section-4 .content .text {
-    width: 100%;
-    font-size: 16px;
-    padding-left: 0;
+  p{
+    font-size: 17px;
   }
 
   .section-2 .content .image,
@@ -627,11 +622,19 @@ nav .nome {
     gap: 1rem;
   }
 
+  .poderoso h4 {
+    font-size: 1rem;
+  }
+
   .cards-poderosos {
     padding: 10px;
-    font-size: 1rem;
     width: 70%;
   }
+
+   .cards-poderosos h3 {
+    font-size: 18px;
+  }
+
 
   .cards-poderosos img {
     width: 100%;
