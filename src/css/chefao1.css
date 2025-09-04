@@ -716,6 +716,10 @@ p{
     font-size: 1em;
   }
 
+  .card:hover .card-content {
+    height: 60%;
+  }
+
   .poderoso h4 {
     font-size: 1rem;
   }
@@ -731,7 +735,7 @@ p{
   }
 
   .cards-poderosos h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
  .footer {

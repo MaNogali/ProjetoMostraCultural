@@ -523,7 +523,6 @@ nav .nome {
 
   .content {
     flex-direction: column;
-    padding: 10px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -631,7 +630,7 @@ nav .nome {
   }
 
    .cards-poderosos h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
 
