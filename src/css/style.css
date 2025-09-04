@@ -202,7 +202,6 @@ nav .nome {
   position: relative;
   border-top: 5px solid var(--marrom2);
   border-bottom: 5px solid var(--marrom2); 
-  height:  55px;
 }
 
  h2::before {
@@ -519,6 +518,7 @@ nav .nome {
   h2 {
     font-size: 35px;
     margin: 10px;
+    height:  55px;
   }
 
   .content {
