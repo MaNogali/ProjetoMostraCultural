@@ -169,6 +169,8 @@ hr{
   display: flex;
   flex-direction: row;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
  .content .text {
@@ -577,10 +579,15 @@ p{
   }
 
   h1, h2, h3 {
-    font-size: 35px;
-    padding: 10px;
+    font-size: 50px;
     height:  55px;
   }
+
+  h2::before,
+  h2::after {
+  content: none;
+  display: none;
+}
 
   nav {
     flex-direction: column;
@@ -617,6 +624,10 @@ p{
   .section-diretor .img,
   .section-bastidores .img {
     width: 70%;
+  }
+
+  .section-diretor .img{
+    margin-bottom: -40px;
   }
 
   p{

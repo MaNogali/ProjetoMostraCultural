@@ -567,9 +567,16 @@ p{
   }
 
     h1, h2, h3 {
-    font-size: 35px;
-    padding: 10px;
-    height: 60px;
+    font-size: 50px;
+    height:  55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2::before,
+  h2::after {
+  content: none;
+  display: none;
   }
 
   nav {
@@ -627,8 +634,17 @@ p{
     display: none;
   }
 
+
   .section-diretor .text {
     column-count: 1;
+  }
+
+  .section-produtor .cards{
+    margin-top: 25px;
+  }
+
+  #dois-personagens h2{
+    border: none;
   }
 
   .carousel-container{
@@ -688,6 +704,14 @@ p{
     width: 95%;
   }
 
+  .section-locais h1{
+    margin-bottom: 80px;
+  }
+
+  .section-locais h4{
+    margin-top: 20px;
+  }
+
   .card {
     width: 90%;
     margin-bottom: 20px;
@@ -698,12 +722,16 @@ p{
     font-size: 14px;
   }
 
+  .card-content .title{
+    margin-bottom: 15px;
+  }
+
   .card-content .info {
     font-size: 1em;
   }
 
   .card:hover .card-content {
-    height: 80%;
+    height: 100%;
   }
 
   .poderoso h4 {
@@ -728,9 +756,6 @@ p{
 
   }
 
-  #dois-personagens h2{
-    height: 95px;
-  }
   .cards-poderosos h3 {
     font-size: 20px;
   }
