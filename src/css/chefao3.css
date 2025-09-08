@@ -707,6 +707,10 @@ p{
     width: 100%;
   }
 
+  #lançamento h2{
+    height: 130px;
+  }
+
   .section-curiosidades{
     margin-bottom: 20px;
   }
@@ -725,7 +729,7 @@ p{
   }
 
   .section-locais h4{
-    margin-top: 30px;
+    margin-top: 70px;
   }
 
   .card {
